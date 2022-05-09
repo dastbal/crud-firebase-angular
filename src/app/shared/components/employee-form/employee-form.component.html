@@ -1,0 +1,45 @@
+<form
+  action=""
+  class="mt-3 col-md-8 offset-md-2"
+  (ngSubmit)="onSave()"
+  [formGroup]="employeeForm"
+>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input
+        formControlName="name"
+        type="text"
+        name=""
+        class="form-control"
+        placeholder="Nombre"
+        id=""
+      />
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input
+        formControlName="email"
+        type="text"
+        name=""
+        class="form-control"
+        placeholder="Email"
+        id=""
+      />
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input
+        type="text"
+        formControlName="startDate"
+        name=""
+        class="form-control"
+        placeholder="Start Date"
+        id=""
+      />
+    </div>
+  </div>
+  <button type="button" (click)="onSave()" class="btn btn-success">Save</button>
+</form>
+<button class="btn btn-warning" type="button" (click)="back()">Back</button>
